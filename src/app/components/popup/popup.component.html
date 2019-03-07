@@ -1,0 +1,8 @@
+<div style="height: 100%; width: 100%; text-align: center; display: flex; align-content: center; justify-content: center; flex-direction: column">
+    <h3>Counter</h3>
+    <div>
+      <ng-container *ngIf="(count$ | async) as num">
+        <span style="font-size: 32px" class="badge badge-primary" id="num" [innerText]="num"></span>
+      </ng-container>
+    </div>
+</div>
